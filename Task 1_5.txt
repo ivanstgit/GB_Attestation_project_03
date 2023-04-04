@@ -1,0 +1,91 @@
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ cat > 'Домашние животные'
+собаки
+кошки
+хомяки
+
+^C
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ cat > 'Вьючные животные'
+лошади
+верблюды
+ослы
+
+^C
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ cat 'Домашние животные' 'Вьючные животные' >> 'Друзья человека'
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ mkdir src_files
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ mv 'Друзья человека' src_files
+
+
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ sudo dpkg -i ~/Загрузки/mysql-apt-config_0.8.24-1_all.deb 
+[sudo] пароль для ivanst: 
+Выбор ранее не выбранного пакета mysql-apt-config.
+(Чтение базы данных … на данный момент установлено 267311 файлов и каталогов.)
+Подготовка к распаковке …/mysql-apt-config_0.8.24-1_all.deb …
+Распаковывается mysql-apt-config (0.8.24-1) …
+Настраивается пакет mysql-apt-config (0.8.24-1) …
+Warning: apt-key should not be used in scripts (called from postinst maintainerscript of the package mysql-apt-config)
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ sudo apt-get install mysql-community-client
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  python-pkginfo-doc python3-cachecontrol python3-cachy python3-certifi python3-cleo python3-clikit python3-crashtest python3-distlib python3-filelock
+  python3-html5lib python3-idna python3-lockfile python3-msgpack python3-packaging python3-pastel python3-pip-whl python3-pkginfo python3-platformdirs
+  python3-poetry-core python3-pylev python3-requests python3-requests-toolbelt python3-setuptools-whl python3-shellingham python3-tomlkit
+  python3-urllib3 python3-virtualenv python3-webencodings python3-wheel-whl
+Для их удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  mysql-common mysql-community-client-core mysql-community-client-plugins
+Следующие НОВЫЕ пакеты будут установлены:
+  mysql-common mysql-community-client mysql-community-client-core mysql-community-client-plugins
+Обновлено 0 пакетов, установлено 4 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 6 147 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 74,7 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-common amd64 8.0.32-1ubuntu22.04 [68,6 kB]
+Пол:2 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-plugins amd64 8.0.32-1ubuntu22.04 [1 437 kB]
+Пол:3 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-core amd64 8.0.32-1ubuntu22.04 [2 184 kB]
+Пол:4 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client amd64 8.0.32-1ubuntu22.04 [2 458 kB]
+Получено 6 147 kB за 1с (6 705 kB/s)                       
+Выбор ранее не выбранного пакета mysql-common.
+(Чтение базы данных … на данный момент установлено 267316 файлов и каталогов.)
+Подготовка к распаковке …/mysql-common_8.0.32-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-common (8.0.32-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-client-plugins.
+Подготовка к распаковке …/mysql-community-client-plugins_8.0.32-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-client-plugins (8.0.32-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-client-core.
+Подготовка к распаковке …/mysql-community-client-core_8.0.32-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-client-core (8.0.32-1ubuntu22.04) …
+Выбор ранее не выбранного пакета mysql-community-client.
+Подготовка к распаковке …/mysql-community-client_8.0.32-1ubuntu22.04_amd64.deb …
+Распаковывается mysql-community-client (8.0.32-1ubuntu22.04) …
+Настраивается пакет mysql-common (8.0.32-1ubuntu22.04) …
+update-alternatives: используется /etc/mysql/my.cnf.fallback для предоставления /etc/mysql/my.cnf (my.cnf) в автоматическом режиме
+Настраивается пакет mysql-community-client-plugins (8.0.32-1ubuntu22.04) …
+Настраивается пакет mysql-community-client-core (8.0.32-1ubuntu22.04) …
+Настраивается пакет mysql-community-client (8.0.32-1ubuntu22.04) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ sudo apt-get remove mysql-community-client
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  mysql-common mysql-community-client-core mysql-community-client-plugins python-pkginfo-doc python3-cachecontrol python3-cachy python3-certifi python3-cleo python3-clikit python3-crashtest python3-distlib
+  python3-filelock python3-html5lib python3-idna python3-lockfile python3-msgpack python3-packaging python3-pastel python3-pip-whl python3-pkginfo python3-platformdirs python3-poetry-core python3-pylev
+  python3-requests python3-requests-toolbelt python3-setuptools-whl python3-shellingham python3-tomlkit python3-urllib3 python3-virtualenv python3-webencodings python3-wheel-whl
+Для их удаления используйте «sudo apt autoremove».
+Следующие пакеты будут УДАЛЕНЫ:
+  mysql-community-client
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 1 пакетов, и 0 пакетов не обновлено.
+После данной операции объём занятого дискового пространства уменьшится на 44,1 MB.
+Хотите продолжить? [Д/н] y
+(Чтение базы данных … на данный момент установлено 267402 файла и каталога.)
+Удаляется mysql-community-client (8.0.32-1ubuntu22.04) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+ivanst@ivanst-UM:~/Рабочий стол/GB_att/GB_Attestation_project_03$ sudo apt-get install mysql-community-server
+
